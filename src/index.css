@@ -1,0 +1,103 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.day {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.day:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.diet-chart {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+  animation: fadeIn 0.5s;
+}
+
+.diet-chart h2 {
+  color: #333;
+}
+
+.diet-chart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.diet-chart li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.diet-chart li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: slideIn 0.3s;
+}
+
+.sidebar h3 {
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
