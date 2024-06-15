@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/diet-chart/static/css/main.d5b52443.css",
+    "main.js": "/diet-chart/static/js/main.2f4908a2.js",
+    "index.html": "/diet-chart/index.html",
+    "main.d5b52443.css.map": "/diet-chart/static/css/main.d5b52443.css.map",
+    "main.2f4908a2.js.map": "/diet-chart/static/js/main.2f4908a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5b52443.css",
+    "static/js/main.2f4908a2.js"
+  ]
+}
